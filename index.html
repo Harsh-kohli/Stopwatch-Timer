@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Timer with progress Bar</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="container2">
+        <div class="cont">
+            <div class="card">
+                <span class="card__title">Enter Number of Minutes</span>
+                <p class="card__content">Enter number of minutes here and then click on start button to start the timer.
+                </p>
+                <form class="card__form" id="form" action="/" method="GET">
+                    <input placeholder="Enter minutes" id="inputField"  type="text" required />
+                    <button   class="clock1" type="submit"  id="timer">Start Now</button>
+                    <button id="stopTimer" class="disabledBtn" >Clear Timer</button>
+                </form>
+            </div>
+        </div>
+      </div>
+      <div class="container2">
+            <div class="main-container center">
+                <div class="circle-container center">
+                    <div class="semicircle"></div>
+                    <div class="semicircle"></div>
+                    <div class="semicircle"></div>
+                    <div class="outermost-circle"></div>
+                </div>
+                <div class="timer-container center">
+                    <div class="timer center">
+                      <div>00</div>
+                      <div>:</div>
+                      <div>00</div>
+                      <div>:</div>
+                      <div>00</div>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
